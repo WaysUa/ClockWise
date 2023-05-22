@@ -59,6 +59,7 @@ dependencies {
     implementation(Dependencies.Compose.composeMaterial)
     implementation(Dependencies.Compose.accompanist)
     implementation(Dependencies.Compose.composeLiveData)
+    implementation(Dependencies.Compose.navigation)
     debugImplementation(Dependencies.Compose.Debug.composeUiTooling)
     debugImplementation(Dependencies.Compose.Debug.composeUiTestManifest)
     // Unit Testing

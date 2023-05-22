@@ -1,0 +1,26 @@
+package com.main.clockwise.domain.navigation.main
+
+import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import com.main.clockwise.presentation.BottomNavigationScreen
+
+@Composable
+fun MainNavigationGraph(
+    navController: NavHostController
+) {
+    NavHost(
+        navController = navController,
+        route = "main_navigation_graph",
+        startDestination = MainNavigationGraphRoutes.BOTTOM_NAVIGATION_GRAPH
+    ) {
+        composable(route = MainNavigationGraphRoutes.BOTTOM_NAVIGATION_GRAPH) {
+            BottomNavigationScreen()
+        }
+    }
+}
+
+object MainNavigationGraphRoutes {
+    const val BOTTOM_NAVIGATION_GRAPH = "bottom_navigation_graph"
+}
