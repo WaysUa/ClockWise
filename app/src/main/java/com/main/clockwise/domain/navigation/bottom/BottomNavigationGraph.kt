@@ -17,6 +17,9 @@ fun BottomNavigationGraph(
     modifier: Modifier,
 ) {
     NavHost(navController = navController, startDestination = BottomBarScreen.Home.route) {
+        composable(BottomBarScreen.Clock.route) {
+
+        }
         composable(BottomBarScreen.Home.route) {
             FirstScreen(modifier = modifier)
         }
