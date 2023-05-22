@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ClockWise"
 include(":app")
+include(":core")

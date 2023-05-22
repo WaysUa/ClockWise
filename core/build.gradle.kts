@@ -1,18 +1,15 @@
 plugins {
-    id(Plugins.application)
+    id(Plugins.library)
     id(Plugins.android)
 }
 
 android {
-    namespace = Config.appModulePackageName
+    namespace = Config.coreModulePackageName
     compileSdk = Config.compileSdk
 
     defaultConfig {
-        applicationId = Config.appModulePackageName
         minSdk = Config.minSdk
         targetSdk = Config.targetSdk
-        versionCode = Config.versionCode
-        versionName = Config.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -66,19 +63,7 @@ dependencies {
     testImplementation(Dependencies.Test.Mockito.inline)
     testImplementation(Dependencies.Test.KotlinX.coroutines)
     testImplementation(Dependencies.Test.JUnit.core)
-    // Android Testing
-    androidTestImplementation(Dependencies.Test.Compose.navigation)
-    androidTestImplementation(Dependencies.Test.Compose.jUnit)
-    androidTestImplementation(Dependencies.Test.JUnit.core)
-    androidTestImplementation(Dependencies.Test.Mockito.core)
-    androidTestImplementation(Dependencies.Test.Mockito.inline)
-    // Navigation
-    implementation(Dependencies.Navigation.navigationCompose)
     // Koin
     implementation(Dependencies.Koin.android)
     implementation(Dependencies.Koin.compose)
-    // Splash Screen
-    implementation(Dependencies.SplashScreen.main)
-    // Modules
-    implementation(project(Modules.coreModule))
 }

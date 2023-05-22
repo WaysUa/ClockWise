@@ -1,4 +1,4 @@
-package com.main.clockwise.ui.theme
+package com.main.core.res.theme
 
 import androidx.compose.ui.graphics.Color
 

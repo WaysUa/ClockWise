@@ -1,4 +1,4 @@
-package com.main.clockwise.ui.theme
+package com.main.core.res.theme
 
 import android.app.Activity
 import android.os.Build
