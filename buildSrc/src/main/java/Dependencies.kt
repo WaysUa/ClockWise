@@ -37,13 +37,6 @@ object Dependencies {
         const val navigationCompose = "androidx.navigation:navigation-compose:$version"
     }
 
-    object Pager {
-        private const val version = "0.26.4-beta"
-
-        const val pager = "com.google.accompanist:accompanist-pager:$version"
-        const val pagerIndicators = "com.google.accompanist:accompanist-pager-indicators:$version"
-    }
-
     object DataStore {
         private const val version = "1.0.0"
 
@@ -52,10 +45,6 @@ object Dependencies {
 
     object SplashScreen {
         const val main = "androidx.core:core-splashscreen:1.0.1"
-    }
-
-    object Firebase {
-        const val auth = "com.google.firebase:firebase-auth-ktx:22.0.0"
     }
 
     object Test {
