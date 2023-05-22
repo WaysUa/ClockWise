@@ -25,9 +25,10 @@ fun BeautifulBottomNavigation(
 ) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val items = listOf(
+        BottomBarScreen.Clock,
         BottomBarScreen.Profile,
         BottomBarScreen.Home,
-        BottomBarScreen.Settings,
+        BottomBarScreen.Settings
     )
     Row(
         modifier = Modifier
