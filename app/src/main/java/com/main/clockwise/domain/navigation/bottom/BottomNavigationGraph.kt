@@ -9,21 +9,22 @@ import com.main.clockwise.data.navigation.BottomBarScreen
 import com.main.clockwise.presentation.screen.SecondScreen
 import com.main.clockwise.presentation.screen.ThirdScreen
 import com.main.feat_clock.presentation.ui.ClockScreen
+import com.main.feat_timer.presentation.ui.TimerScreen
 
 @Composable
 fun BottomNavigationGraph(
     navController: NavHostController,
     modifier: Modifier,
 ) {
-    NavHost(navController = navController, startDestination = BottomBarScreen.Home.route) {
-        composable(BottomBarScreen.Home.route) {
+    NavHost(navController = navController, startDestination = BottomBarScreen.Clock.route) {
+        composable(BottomBarScreen.Clock.route) {
             ClockScreen()
+        }
+        composable(BottomBarScreen.Timer.route) {
+            TimerScreen()
         }
         composable(BottomBarScreen.Settings.route) {
             SecondScreen(modifier = modifier)
-        }
-        composable(BottomBarScreen.Profile.route) {
-            ThirdScreen(modifier = modifier)
         }
     }
 }

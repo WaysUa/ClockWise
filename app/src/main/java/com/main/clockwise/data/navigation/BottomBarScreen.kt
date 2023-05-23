@@ -11,15 +11,15 @@ sealed class BottomBarScreen(
     val title: String,
     val icon: ImageVector
 ) {
-    object Home : BottomBarScreen(
-        route = "HOME",
-        title = "HOME",
+    object Clock : BottomBarScreen(
+        route = "clock_screen_route",
+        title = "Clock",
         icon = Icons.Default.Home
     )
 
-    object Profile : BottomBarScreen(
-        route = "PROFILE",
-        title = "PROFILE",
+    object Timer : BottomBarScreen(
+        route = "timer_screen_route",
+        title = "Timer",
         icon = Icons.Default.Person
     )
 

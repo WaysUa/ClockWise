@@ -1,4 +1,4 @@
-package com.main.feat_clock.presentation.ui
+package com.main.feat_timer.presentation.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -10,10 +10,10 @@ import androidx.compose.ui.Modifier
 import com.main.core.res.theme.ClockWiseTheme
 
 @Composable
-fun ClockScreen() {
+fun TimerScreen() {
     Box(
         modifier = Modifier.fillMaxSize().background(ClockWiseTheme.colors.primaryBackground),
         contentAlignment = Alignment.Center) {
-        Text(text = "Clock")
+        Text(text = "Timer")
     }
 }
