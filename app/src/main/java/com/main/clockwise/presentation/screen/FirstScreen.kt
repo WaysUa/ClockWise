@@ -11,16 +11,6 @@ import androidx.compose.ui.Modifier
 import com.main.core.res.theme.ClockWiseTheme
 
 @Composable
-fun FirstScreen(modifier: Modifier) {
-    Log.d("MyLog", "1")
-    Box(
-        modifier = modifier.fillMaxSize().background(ClockWiseTheme.colors.primaryBackground),
-        contentAlignment = Alignment.Center) {
-        Text(text = "First")
-    }
-}
-
-@Composable
 fun SecondScreen(modifier: Modifier) {
     Log.d("MyLog", "2")
     Box(

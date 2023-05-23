@@ -16,3 +16,4 @@ rootProject.name = "ClockWise"
 include(":app")
 include(":core")
 include(":feat-clock")
+include(":feat-timer")

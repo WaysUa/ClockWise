@@ -6,9 +6,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.main.clockwise.data.navigation.BottomBarScreen
-import com.main.clockwise.presentation.screen.FirstScreen
 import com.main.clockwise.presentation.screen.SecondScreen
 import com.main.clockwise.presentation.screen.ThirdScreen
+import com.main.feat_clock.presentation.ui.ClockScreen
 
 @Composable
 fun BottomNavigationGraph(
@@ -17,7 +17,7 @@ fun BottomNavigationGraph(
 ) {
     NavHost(navController = navController, startDestination = BottomBarScreen.Home.route) {
         composable(BottomBarScreen.Home.route) {
-            FirstScreen(modifier = modifier)
+            ClockScreen()
         }
         composable(BottomBarScreen.Settings.route) {
             SecondScreen(modifier = modifier)

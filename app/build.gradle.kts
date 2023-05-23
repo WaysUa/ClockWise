@@ -77,11 +77,10 @@ dependencies {
     // Koin
     implementation(Dependencies.Koin.android)
     implementation(Dependencies.Koin.compose)
-
-    implementation ("com.google.android.material:material:1.9.0")
     // Splash Screen
     implementation(Dependencies.SplashScreen.main)
     // Modules
     implementation(project(Modules.coreModule))
     implementation(project(Modules.featClock))
+    implementation(project(Modules.featTimer))
 }

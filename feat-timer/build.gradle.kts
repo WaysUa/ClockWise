@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = Config.featClockModulePackageName
+    namespace = Config.featTimerModulePackageName
     compileSdk = Config.compileSdk
 
     defaultConfig {
