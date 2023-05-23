@@ -3,7 +3,11 @@ package com.main.clockwise.presentation.components
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
@@ -33,7 +37,7 @@ fun BeautifulBottomNavigation(
     val items = listOf(
         BottomBarScreen.Timer,
         BottomBarScreen.Clock,
-        BottomBarScreen.Settings
+        BottomBarScreen.Stopwatch
     )
 
     Row(
@@ -45,7 +49,7 @@ fun BeautifulBottomNavigation(
         verticalAlignment = Alignment.CenterVertically
     ) {
         val currentDestination = navBackStackEntry?.destination
-        val previousDestination = remember { mutableStateOf(items.first().route) }
+        val previousDestination = remember { mutableStateOf(BottomBarScreen.Clock.route) }
 
         items.forEach { screen ->
             CustomBottomNavigationItem(

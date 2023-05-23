@@ -83,4 +83,5 @@ dependencies {
     implementation(project(Modules.coreModule))
     implementation(project(Modules.featClock))
     implementation(project(Modules.featTimer))
+    implementation(project(Modules.featStopwatch))
 }

@@ -23,9 +23,9 @@ sealed class BottomBarScreen(
         icon = Icons.Default.Person
     )
 
-    object Settings : BottomBarScreen(
-        route = "SETTINGS",
-        title = "SETTINGS",
+    object Stopwatch : BottomBarScreen(
+        route = "stopwatch_scree_route",
+        title = "Stopwatch",
         icon = Icons.Default.Settings
     )
 }
