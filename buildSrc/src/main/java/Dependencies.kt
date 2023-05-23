@@ -11,7 +11,6 @@ object Dependencies {
         const val accompanist = "com.google.accompanist:accompanist-systemuicontroller:0.31.1-alpha"
         const val composeLiveData = "androidx.compose.runtime:runtime-livedata:$version"
         const val icons = "androidx.compose.material:material-icons-extended:$version"
-        const val navigation = "androidx.navigation:navigation-compose:2.5.3"
 
         object Debug {
             const val composeUiTooling = "androidx.compose.ui:ui-tooling"
@@ -36,6 +35,13 @@ object Dependencies {
         private const val version = "2.6.0-beta01"
 
         const val navigationCompose = "androidx.navigation:navigation-compose:$version"
+    }
+
+    object Pager {
+        private const val version = "0.26.4-beta"
+
+        const val pager = "com.google.accompanist:accompanist-pager:$version"
+        const val pagerIndicators = "com.google.accompanist:accompanist-pager-indicators:$version"
     }
 
     object DataStore {

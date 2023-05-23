@@ -1,44 +1,33 @@
 package com.main.core.res.theme
 
+import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.view.WindowCompat
 
 @Composable
 fun ClockWiseTheme(
-    style: ClockWiseStyle = ClockWiseStyle.Purple,
     textSize: ClockWiseSize = ClockWiseSize.Medium,
     paddingSize: ClockWiseSize = ClockWiseSize.Medium,
     corners: ClockWiseCorners = ClockWiseCorners.Rounded,
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val colors = when (darkTheme) {
-        true -> {
-            when (style) {
-                ClockWiseStyle.Purple -> purpleDarkPalette
-                ClockWiseStyle.Blue -> blueDarkPalette
-                ClockWiseStyle.Orange -> orangeDarkPalette
-                ClockWiseStyle.Red -> redDarkPalette
-                ClockWiseStyle.Green -> greenDarkPalette
-            }
-        }
-        false -> {
-            when (style) {
-                ClockWiseStyle.Purple -> purpleLightPalette
-                ClockWiseStyle.Blue -> blueLightPalette
-                ClockWiseStyle.Orange -> orangeLightPalette
-                ClockWiseStyle.Red -> redLightPalette
-                ClockWiseStyle.Green -> greenLightPalette
-            }
-        }
+    val colors = if (darkTheme) {
+        baseDarkPalette
+    } else {
+        baseLightPalette
     }
-
     val typography = ClockWiseTypography(
         heading = TextStyle(
             fontSize = when (textSize) {

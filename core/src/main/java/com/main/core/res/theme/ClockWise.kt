@@ -8,13 +8,11 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 
 data class ClockWiseColors(
-    val primaryText: Color,
     val primaryBackground: Color,
-    val secondaryText: Color,
+    val primaryItem: Color,
+    val secondaryItem: Color,
     val secondaryBackground: Color,
-    val tintColor: Color,
-    val controlColor: Color,
-    val errorColor: Color
+    val checkedItem: Color
 )
 
 data class ClockWiseTypography(
@@ -50,10 +48,6 @@ object ClockWiseTheme {
     val images: ClockWiseImage
         @Composable
         get() = LocalClockWiseImage.current
-}
-
-enum class ClockWiseStyle {
-    Purple, Orange, Blue, Red, Green
 }
 
 enum class ClockWiseSize {

@@ -59,7 +59,6 @@ dependencies {
     implementation(Dependencies.Compose.composeMaterial)
     implementation(Dependencies.Compose.accompanist)
     implementation(Dependencies.Compose.composeLiveData)
-    implementation(Dependencies.Compose.navigation)
     debugImplementation(Dependencies.Compose.Debug.composeUiTooling)
     debugImplementation(Dependencies.Compose.Debug.composeUiTestManifest)
     // Unit Testing
@@ -78,6 +77,8 @@ dependencies {
     // Koin
     implementation(Dependencies.Koin.android)
     implementation(Dependencies.Koin.compose)
+
+    implementation ("com.google.android.material:material:1.9.0")
     // Splash Screen
     implementation(Dependencies.SplashScreen.main)
     // Modules

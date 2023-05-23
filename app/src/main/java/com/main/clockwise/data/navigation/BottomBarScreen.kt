@@ -11,12 +11,6 @@ sealed class BottomBarScreen(
     val title: String,
     val icon: ImageVector
 ) {
-    object Clock : BottomBarScreen(
-        route = "ClockRouteScreen",
-        title = "Clock",
-        icon = Icons.Default.Home
-    )
-
     object Home : BottomBarScreen(
         route = "HOME",
         title = "HOME",
