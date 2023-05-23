@@ -7,7 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.main.clockwise.data.navigation.BottomBarScreen
 import com.main.feat_clock.presentation.ui.ClockScreen
-import com.main.feat_stopwatch.presentation.ui.StopwatchScreen
+import com.main.feat_stopwatch.presentation.ui.screen.StopwatchScreen
 import com.main.feat_timer.presentation.ui.TimerScreen
 
 @Composable
