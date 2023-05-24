@@ -1,4 +1,4 @@
-package com.main.core.domain
+package com.main.core.domain.network
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

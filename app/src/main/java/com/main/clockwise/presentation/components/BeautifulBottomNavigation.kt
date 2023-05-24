@@ -25,7 +25,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.main.clockwise.data.navigation.BottomBarScreen
-import com.main.core.res.theme.ClockWiseTheme
+import com.main.core.presentation.ui.theme.ClockWiseTheme
 import kotlinx.coroutines.launch
 
 @Composable

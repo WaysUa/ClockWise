@@ -11,7 +11,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.main.clockwise.domain.navigation.bottom.BottomNavigationGraph
 import com.main.clockwise.presentation.components.BeautifulBottomNavigation
-import com.main.core.res.theme.ClockWiseTheme
+import com.main.core.presentation.ui.theme.ClockWiseTheme
 
 @Composable
 fun BottomNavigationScreen(

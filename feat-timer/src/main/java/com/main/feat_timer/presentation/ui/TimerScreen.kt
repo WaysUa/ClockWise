@@ -7,7 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.main.core.res.theme.ClockWiseTheme
+import com.main.core.presentation.ui.theme.ClockWiseTheme
 
 @Composable
 fun TimerScreen() {
