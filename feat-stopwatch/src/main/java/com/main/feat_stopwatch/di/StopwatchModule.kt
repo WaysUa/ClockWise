@@ -1,5 +1,7 @@
 package com.main.feat_stopwatch.di
 
+import android.app.NotificationManager
+import android.content.Context
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.core.app.NotificationCompat
 import com.main.feat_stopwatch.domain.util.Constants
@@ -22,5 +24,8 @@ val stopwatchModule = module {
             .addAction(0, "Stop", ServiceHelper.stopPendingIntent(get()))
             .addAction(0, "Cancel", ServiceHelper.cancelPendingIntent(get()))
             .setContentIntent(ServiceHelper.clickPendingIntent(get()))
+    }
+    single {
+        get<Context>().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
     }
 }

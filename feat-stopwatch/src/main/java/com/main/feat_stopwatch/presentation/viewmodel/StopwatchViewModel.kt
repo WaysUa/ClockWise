@@ -21,7 +21,6 @@ class StopwatchViewModel(
         viewModelScope.launch(dispatchers.io()) {
             when(event) {
                 StopwatchEvent.EnterScreen -> _stopwatchViewState.emit(StopwatchViewState.Display)
-                else -> {}
             }
         }
     }
